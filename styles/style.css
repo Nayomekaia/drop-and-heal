@@ -1,16 +1,16 @@
 
 .background-container {
-    width: 100vw; /* Full viewport width */
-    height: 100vh; /* Full viewport height */
-    background-color: black; /* Set the background color */
+    width: 100vw; 
+    height: 100vh; 
+    background-color: black; 
     background-image: url('https://s3-alpha-sig.figma.com/img/e9c0/ce48/06728062e3721e12b38b495b488c174d?Expires=1728259200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qlpD~W7z2D77wptMDpFNiX1-MvpkXYq4qjNkbTxc~brLnEHkdazFESZWW9INusJ0mJ3IVMcQI96yQGV560ziAhidVUP8F6f2tWSdMZswkFfb2pJn1QGIw95~xC9nXqTwwIT3Bi2kLL9XkwUazu~0de7USq8GbSRkAEdEIr1~aX8P0GqBDNGM-rGJ34mz2SEnrP17eaVtK-RSx22NjksTLMV~ap49UlHIdT-k8dLByPjz-btp3~L2CLq6MF7N~A5BTjnVVw9bm7RE8m5dY~4j3T5ymuHpIL9CLZsJLmA-gtZn~NzgjMfRulo0jyeQA4Lx7Uq4QRleBoiU22TfLOaQNA__'); 
     background-image position: left;
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Don't repeat the image */
-    transition: transform 0.5s ease; /* Smooth transition for the hover effect */
-    overflow: hidden; /* Prevent overflow */
+    background-position: center; 
+    background-repeat: no-repeat; 
+    transition: transform 0.5s ease; 
+    overflow: hidden; 
   }
   
   /* Hover effect */
   .background-container:hover {
-    transform: scale(1.1); /* Zoom the background *
+    transform: scale(1.1); 
