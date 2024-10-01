@@ -1,11 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Calvino Grande Trial;
-}
-
-body {
+body {                                                           font-family: 'Calvino Grande Trial', sans-serif;
+    font-family: 'Calvino Grande Trial', sans-serif;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -29,6 +23,7 @@ body {
     width: 900px;  
     height: 900px;
     background-image: url('https://s3-alpha-sig.figma.com/img/e9c0/ce48/06728062e3721e12b38b495b488c174d?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=m4XOHmOk1FShrWxJK6JMlA1Qh7b9Zyhw4DHBrSMP1kR6G7pXoL0q-hdf7FygIQcABnVlcSwOdW1ZBA2Tq2omSqNKNP476ScuaXBD-emXfBmWt~UmmPfbRk6KC-g8z70eBQQ1uSHaMheqp5LqG0h1CJmqAbb9MxptuFJmkKFNEh6X7joG8f~XJQ1n1M3~lemgkhmEG4jMCFPTc7MuQ1AKyATANgDzWwkVs37vk2m~k5PUC5~qTjIhJcIOgeex4CVqtkuicYL8FfTostdXa5XTXD62pH-hg2G6t-9D0GMjqwZJa~~Hzfq9wzSxiWJBq7zwi3Gsmm6ELTsjgq4km9bSTQ__');
+    opacity: 65%;
     background-size: contain; 
     background-repeat: no-repeat; 
     background-position: center; 
@@ -36,32 +31,37 @@ body {
 
 .content {
     position: relative;
-    z-index: 2;
+    z-index: 1;
     color: white;
-    padding: 20px;
+    padding: 250px;
 }
 
 h1 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 p {
     text-align: center;
     font-size: 1.2rem;
-    margin-bottom: 10px;
+    margin-top: 1px;
+    margin-bottom: 37px;
+    
 }
 
 button {
     background-color: rgb(255 255 255 / 0%);
     color: white;
     border: 1px solid white;
-    padding: 12px 60px;
+    padding: 20px 80px;
+    margin-top: 50px;
+    margin-bottom: 1px;
     font-size: 1rem;
     cursor: pointer;
-    border-radius: 22px;
+    border-radius: 40px;
     transition: background-color 0.3s ease;
 }
 
