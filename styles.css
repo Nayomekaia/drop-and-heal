@@ -29,7 +29,9 @@ body, html {
     width: 500px;
     height: 500px;
     background-image: url('https://s3-alpha-sig.figma.com/img/e9c0/ce48/06728062e3721e12b38b495b488c174d?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=m4XOHmOk1FShrWxJK6JMlA1Qh7b9Zyhw4DHBrSMP1kR6G7pXoL0q-hdf7FygIQcABnVlcSwOdW1ZBA2Tq2omSqNKNP476ScuaXBD-emXfBmWt~UmmPfbRk6KC-g8z70eBQQ1uSHaMheqp5LqG0h1CJmqAbb9MxptuFJmkKFNEh6X7joG8f~XJQ1n1M3~lemgkhmEG4jMCFPTc7MuQ1AKyATANgDzWwkVs37vk2m~k5PUC5~qTjIhJcIOgeex4CVqtkuicYL8FfTostdXa5XTXD62pH-hg2G6t-9D0GMjqwZJa~~Hzfq9wzSxiWJBq7zwi3Gsmm6ELTsjgq4km9bSTQ__');
-   
+    max-width: 100%; 
+    height: auto; ;
+}
 
 .content {
     position: relative;
