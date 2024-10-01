@@ -2,54 +2,66 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Calvino Grande Trial;
 }
 
 body, html {
     height: 100%;
-    font-family: Arial, sans-serif;
-}
-
-.background-container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-image: url('https://s3-alpha-sig.figma.com/img/e9c0/ce48/06728062e3721e12b38b495b488c174d?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=m4XOHmOk1FShrWxJK6JMlA1Qh7b9Zyhw4DHBrSMP1kR6G7pXoL0q-hdf7FygIQcABnVlcSwOdW1ZBA2Tq2omSqNKNP476ScuaXBD-emXfBmWt~UmmPfbRk6KC-g8z70eBQQ1uSHaMheqp5LqG0h1CJmqAbb9MxptuFJmkKFNEh6X7joG8f~XJQ1n1M3~lemgkhmEG4jMCFPTc7MuQ1AKyATANgDzWwkVs37vk2m~k5PUC5~qTjIhJcIOgeex4CVqtkuicYL8FfTostdXa5XTXD62pH-hg2G6t-9D0GMjqwZJa~~Hzfq9wzSxiWJBq7zwi3Gsmm6ELTsjgq4km9bSTQ__');
-    background-size: cover;
-    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #000;
 }
 
-.text-content {
+.container {
     position: relative;
-    color: white;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(0, 168, 255, 0.8), rgba(0, 0, 0, 0.9));
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    color: white;
     padding: 20px;
-    border-radius: 10px;
 }
 
 h1 {
     font-size: 3rem;
+    font-weight: bold;
     margin-bottom: 20px;
 }
 
 p {
     font-size: 1.2rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 button {
-    padding: 10px 20px;
-    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.2);
     color: white;
-    background-color: #444;
-    border: none;
+    border: 1px solid white;
+    padding: 10px 30px;
+    font-size: 1rem;
     cursor: pointer;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #666;
+    background-color: rgba(255, 255, 255, 0.5);
 }
