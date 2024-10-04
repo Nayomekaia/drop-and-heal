@@ -1,6 +1,8 @@
-body {                                                           
+body {
     font-family: 'Calvino Grande Trial', sans-serif;
     height: 100%;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,68 +11,80 @@ body {
 
 .container {
     position: relative;
-    text-align: center;
-    height: 100vh;
-    width: 100vw;
+    height: 100vh; /* Full viewport height */
+    width: 100vw;  /* Full viewport width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
+    
 }
-
+    
 .overlay {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 45%;
     transform: translate(-50%, -50%);
-    width: 900px;  
-    height: 900px;
+    width: 90%;
+    height: 100%;
     background-image: url('https://s3-alpha-sig.figma.com/img/e9c0/ce48/06728062e3721e12b38b495b488c174d?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=m4XOHmOk1FShrWxJK6JMlA1Qh7b9Zyhw4DHBrSMP1kR6G7pXoL0q-hdf7FygIQcABnVlcSwOdW1ZBA2Tq2omSqNKNP476ScuaXBD-emXfBmWt~UmmPfbRk6KC-g8z70eBQQ1uSHaMheqp5LqG0h1CJmqAbb9MxptuFJmkKFNEh6X7joG8f~XJQ1n1M3~lemgkhmEG4jMCFPTc7MuQ1AKyATANgDzWwkVs37vk2m~k5PUC5~qTjIhJcIOgeex4CVqtkuicYL8FfTostdXa5XTXD62pH-hg2G6t-9D0GMjqwZJa~~Hzfq9wzSxiWJBq7zwi3Gsmm6ELTsjgq4km9bSTQ__');
     opacity: 65%;
-    background-size: contain; 
-    background-repeat: no-repeat; 
-    background-position: center; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .content {
     position: relative;
     z-index: 1;
+    text-align: left;
     color: white;
-    padding: 250px;
+    padding: 2vw; /* Makes padding responsive */
 }
+   
 
 h1 {
-    text-align: center;
-    font-size: 4rem;
-    font-weight: bold;
-    margin-top: 100px;
-    margin-bottom: 50px;
+    font-family: 'Calvino Grande Trial', sans-serif;
+    font-weight: 800;
+    font-size: 6rem;
+    margin-bottom: 2vw;
+    margin-left: 0; /* Remove fixed margin */
+    line-height: 0.95;
 }
 
 p {
-    justify-content: center;
-    margin: 300px;
-    text-align: left;
-    font-size: 1.2rem;
-    margin-top: 1px;
-    margin-bottom: 10px;
-    margin-right: 10px;    
+     font-size: 1.5rem;
+     margin-top: 1vw;
+     margin-bottom: 10px;
+
 }
 
 span {
     display: block;
 }
-
 button {
-    background-color: rgb(255 255 255 / 0%);
+    background-color: rgba(255, 255, 255, 0.08);
+    justify-items: center;
     color: white;
     border: 1px solid white;
-    padding: 20px 80px;
-    margin-top: 50px;
-    margin-bottom: 1px;
+    padding: 1vw 6vw; /* Responsive padding */
     font-size: 1rem;
     cursor: pointer;
     border-radius: 40px;
     transition: background-color 0.3s ease;
-}
+    display: inline-block; /* Keeps it inline but responsive */
+    margin-top: 2vw; /* Add some space between the text and button */
+}   
 
 button:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 3rem; /* Adjust font size for small screens */
+        text-align: center;         
+    }
+    }
+
+   
