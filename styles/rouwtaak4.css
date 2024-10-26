@@ -59,37 +59,25 @@ p {
 
 }
 
-.fade-in-text {
-    font-family: Arial;
-    font-size: 150px;
-    animation: fadeIn 5s;
-  }
-
-  @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-
 span {
     display: block;
 }
-
 button {
-    background-color: rgba(255, 255, 255, 0.0); /* Fully transparent background */
-    color: white; /* Text color */
-    border: 1px solid white; /* Border color */
+    background-color: rgba(255, 255, 255, 0.08);
+    justify-items: center;
+    color: white;
+    border: 1px solid white;
     padding: 1vw 6vw; /* Responsive padding */
-    font-size: 1rem; /* Font size */
-    cursor: pointer; /* Pointer cursor on hover */
-    border-radius: 40px; /* Rounded corners */
-    transition: background-color 0.3s ease; /* Smooth background color transition */
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: background-color 0.3s ease;
     display: inline-block; /* Keeps it inline but responsive */
-    margin-top: 2vw; /* Space between the text and button */
-}
+    margin-top: 2vw; /* Add some space between the text and button */
+}   
 
 button:hover {
-    background-color: rgba(255, 255, 255, 0.5); /* Slightly opaque on hover */
-}
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 @media (max-width: 700px) {
@@ -98,5 +86,3 @@ button:hover {
         text-align: center;         
     }
     }
-
-   
