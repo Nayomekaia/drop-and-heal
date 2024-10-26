@@ -11,8 +11,8 @@ body {
 
 .container {
     position: relative;
-    height: 100vh; /* Full viewport height */
-    width: 100vw;  /* Full viewport width */
+    height: 100vh; 
+    width: 100vw;  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,7 +39,7 @@ body {
     z-index: 1;
     text-align: left;
     color: white;
-    padding: 2vw; /* Makes padding responsive */
+    padding: 2vw; 
 }
    
 
@@ -48,7 +48,7 @@ h1 {
     font-weight: 800;
     font-size: 6rem;
     margin-bottom: 2vw;
-    margin-left: 0; /* Remove fixed margin */
+    margin-left: 0; 
     line-height: 0.95;
 }
 
@@ -59,44 +59,29 @@ p {
 
 }
 
-.fade-in-text {
-    font-family: Arial;
-    font-size: 150px;
-    animation: fadeIn 5s;
-  }
-
-  @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-
 span {
     display: block;
 }
-
 button {
-    background-color: rgba(255, 255, 255, 0.0); /* Fully transparent background */
-    color: white; /* Text color */
-    border: 1px solid white; /* Border color */
-    padding: 1vw 6vw; /* Responsive padding */
-    font-size: 1rem; /* Font size */
-    cursor: pointer; /* Pointer cursor on hover */
-    border-radius: 40px; /* Rounded corners */
-    transition: background-color 0.3s ease; /* Smooth background color transition */
-    display: inline-block; /* Keeps it inline but responsive */
-    margin-top: 2vw; /* Space between the text and button */
-}
+    background-color: rgba(255, 255, 255, 0.08);
+    justify-items: center;
+    color: white;
+    border: 1px solid white;
+    padding: 1vw 6vw;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: background-color 0.3s ease;
+    display: inline-block; 
+    margin-top: 2vw; 
 
 button:hover {
-    background-color: rgba(255, 255, 255, 0.5); /* Slightly opaque on hover */
-}
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 @media (max-width: 700px) {
     h1 {
-        font-size: 3rem; /* Adjust font size for small screens */
+        font-size: 3rem; 
         text-align: center;         
     }
     }
-
-   
